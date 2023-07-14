@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:statefull_app/form.dart';
+import 'package:statefull_app/get_detail.dart';
 
 void main() => runApp(const Main());
 
@@ -11,7 +12,7 @@ class Main extends StatelessWidget {
     return const MaterialApp(
       title: 'Flutter push and pop',
       debugShowCheckedModeBanner: false,
-      home: FormPage(),
+      home: GetMethod(),
     );
   }
 }

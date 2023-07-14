@@ -45,6 +45,7 @@ class _FormPageState extends State<FormPage> {
 
   @override
   Widget build(BuildContext context) {
+    print('hello');
     return Scaffold(
         appBar: AppBar(
           title: const Text('Form Page'),
@@ -170,6 +171,7 @@ class _FormPageState extends State<FormPage> {
     return OutlinedButton(
         style: OutlinedButton.styleFrom(minimumSize: const Size(200, 50)),
         onPressed: () {
+          print('submit');
           if (_formkey.currentState!.validate()) {
             ScaffoldMessenger.of(context)
                 .showSnackBar(const SnackBar(content: Text('Processing data')));
